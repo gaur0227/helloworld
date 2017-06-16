@@ -1,8 +1,23 @@
 $color: #fff;
-#main {
+$white: #fefefe;
+$gray: #ccc;
+$light-gray: #e0e0e0;
+
+body{
+  width: 100%;
+  text-align: center;
+  background: $light-gray;
+}
+
+main {
+    display: inline-block;
     width: 600px;
+    padding: 50px;
+    text-align: left;
+    background: $white;
+    border-radius: 10px;
       p {
-        color:$color;
+        color:#fff;
         margin-bottom: 1.5em;
       }
 }

@@ -1,7 +1,18 @@
-#main {
-  width: 600px;
+body {
+  width: 100%;
+  text-align: center;
+  background: #e0e0e0;
 }
-#main p {
+
+main {
+  display: inline-block;
+  width: 600px;
+  padding: 50px;
+  text-align: left;
+  background: #fefefe;
+  border-radius: 10px;
+}
+main p {
   color: #fff;
   margin-bottom: 1.5em;
 }
