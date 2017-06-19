@@ -1,40 +1,72 @@
 $color: #fff;
+$red: #c42;
 $white: #fefefe;
 $gray: #ccc;
 $light-gray: #e0e0e0;
-$dark-gray: #303030;
+$dark-gray: #505050;
 li{list-style: none;}
 
 body{
   width: 100%;
-  padding: 20px;
+  padding-top: 20px;
   text-align: center;
   background: $light-gray;
 }
 
-main {
-    display: inline-block;
-    width: 600px;
+main{
+  display: inline-block;
+  text-align: left;
+  /*test*/
+  section.container{
     padding: 20px;
-    text-align: left;
     background: $white;
     border-radius: 10px;
 
-    section{
-      h1{font-size: 1.8rem; font-weight: 600;}
-      ul{
-        line-height: 1.2em;
-        li{
-          margin-bottom: 20px;
-          article{}
-        }
-        pre{
-          width: 100%;
-          margin: 10px 0;
-          padding: 10px;
-          background: $light-gray;
-          color: $dark-gray;
+    h1{font-size: 1.8rem; font-weight: 600;}
+    h2{font-size: 1.5rem; font-weight: 600;}
+    h3{font-size: 1.2rem; margin: 20px 0 0 0;}
+    ul{
+      margin: 10px 10px 50px 10px;
+      line-height: 1.2em;
+      li{
+        margin-bottom: 20px;
+        article{
+          line-height: 1.6em;
+          time.data{
+            display: inline-block;
+            padding: 0 5px;
+            background: $red;
+            color: $white;
+            font-size: 0.8rem;
+            border-radius: 5px;
+          }
         }
       }
+      pre{
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        line-height: 1.2rem;
+        background: $light-gray;
+        color: $dark-gray;
+        font-size: 0.8em;
+      }
     }
+  }
+  aside.sidecont{
+    padding-right: 0!important;
+    section{
+      padding: 20px;
+      background: $white;
+      border-radius: 10px;
+    }
+  }
+  @media screen and (max-width: 768px){
+    width: 100%!important;
+    section.container{}
+    aside{
+      margin:30px 0;
+      padding: 0!important;
+    }
+  }
 }

@@ -4,35 +4,76 @@ li {
 
 body {
   width: 100%;
-  padding: 20px;
+  padding-top: 20px;
   text-align: center;
   background: #e0e0e0;
 }
 
 main {
   display: inline-block;
-  width: 600px;
-  padding: 20px;
   text-align: left;
+  /*test*/
+}
+main section.container {
+  padding: 20px;
   background: #fefefe;
   border-radius: 10px;
 }
-main section h1 {
+main section.container h1 {
   font-size: 1.8rem;
   font-weight: 600;
 }
-main section ul {
+main section.container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main section.container h3 {
+  font-size: 1.2rem;
+  margin: 20px 0 0 0;
+}
+main section.container ul {
+  margin: 10px 10px 50px 10px;
   line-height: 1.2em;
 }
-main section ul li {
+main section.container ul li {
   margin-bottom: 20px;
 }
-main section ul pre {
+main section.container ul li article {
+  line-height: 1.6em;
+}
+main section.container ul li article time.data {
+  display: inline-block;
+  padding: 0 5px;
+  background: #c42;
+  color: #fefefe;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+main section.container ul pre {
   width: 100%;
   margin: 10px 0;
   padding: 10px;
+  line-height: 1.2rem;
   background: #e0e0e0;
-  color: #303030;
+  color: #505050;
+  font-size: 0.8em;
+}
+main aside.sidecont {
+  padding-right: 0 !important;
+}
+main aside.sidecont section {
+  padding: 20px;
+  background: #fefefe;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 100% !important;
+  }
+  main aside {
+    margin: 30px 0;
+    padding: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
