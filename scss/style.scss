@@ -2,9 +2,12 @@ $color: #fff;
 $white: #fefefe;
 $gray: #ccc;
 $light-gray: #e0e0e0;
+$dark-gray: #303030;
+li{list-style: none;}
 
 body{
   width: 100%;
+  padding: 20px;
   text-align: center;
   background: $light-gray;
 }
@@ -12,12 +15,26 @@ body{
 main {
     display: inline-block;
     width: 600px;
-    padding: 50px;
+    padding: 20px;
     text-align: left;
     background: $white;
     border-radius: 10px;
-      p {
-        color:#fff;
-        margin-bottom: 1.5em;
+
+    section{
+      h1{font-size: 1.8rem; font-weight: 600;}
+      ul{
+        line-height: 1.2em;
+        li{
+          margin-bottom: 20px;
+          article{}
+        }
+        pre{
+          width: 100%;
+          margin: 10px 0;
+          padding: 10px;
+          background: $light-gray;
+          color: $dark-gray;
+        }
       }
+    }
 }

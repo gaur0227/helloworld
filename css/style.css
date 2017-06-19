@@ -1,5 +1,10 @@
+li {
+  list-style: none;
+}
+
 body {
   width: 100%;
+  padding: 20px;
   text-align: center;
   background: #e0e0e0;
 }
@@ -7,14 +12,27 @@ body {
 main {
   display: inline-block;
   width: 600px;
-  padding: 50px;
+  padding: 20px;
   text-align: left;
   background: #fefefe;
   border-radius: 10px;
 }
-main p {
-  color: #fff;
-  margin-bottom: 1.5em;
+main section h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+main section ul {
+  line-height: 1.2em;
+}
+main section ul li {
+  margin-bottom: 20px;
+}
+main section ul pre {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #e0e0e0;
+  color: #303030;
 }
 
 /*# sourceMappingURL=style.css.map */
