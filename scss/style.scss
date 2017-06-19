@@ -16,6 +16,17 @@ main {
     text-align: left;
     background: $white;
     border-radius: 10px;
+    section{
+      .main{
+        width: 330px;
+      }
+    }
+    aside{
+      display: block;
+      margin-left:20px;
+      width:250px;
+      height: 200px;
+    }
       p {
         color:#fff;
         margin-bottom: 1.5em;
