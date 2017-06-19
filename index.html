@@ -14,9 +14,16 @@
   <title>Document</title>
 </head>
 <body>
-  <header></header>
-  <main class="container row">
-    <section class="col-sm-9 container">
+  <header>
+    <nav>
+      <span class="logo">Sample Logz</span>
+      <span>home</span>
+      <span>content</span>
+      <span>sabmenu</span>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="col-md-8 container">
       <h1><a href="hellow.html">HelloWorld</a></h1>
       <hr />
       <h2>JavaScript</h2>
@@ -26,7 +33,10 @@
           <article class="">
             <a target="_blank" href="https://codepen.io/gaur0227/pen/gRPwEZ">document.getElementById();---Training</a>
             <p><time class="data">DATA: 2017-06-12</time></p>
-            <pre><a>http://http.com</a></pre>
+            <code><a>http://http.com</a>
+              test <br />
+              testtesttest
+            </code>
           </article>
         </li>
         <li>
@@ -52,11 +62,13 @@
           <article>
             <a target="_blank" href="https://github.com/gaur0227/helloworld">HelloWorld</a>
             <p><time class="data">DATA: 2017-06-19</time></p>
-            <pre>  ■よく使うGitコード<code>
-    $git add --all
-    $git commit -a -m"Message"
-    $git push --all
-    $git checkout [branch]</code></pre>
+            <code>
+              ■よく使うGitコード
+              $git add --all<br />
+              $git commit -a -m"Message"<br />
+              $git push --all<br />
+              $git checkout [branch]<br />
+            </code>
           </article>
         </li>
       </ul>
@@ -80,13 +92,16 @@
       <hr />
     </section>
 
-    <aside class="col-sm-3 sidecont">
+    <aside class="col-md-4 sidecont container">
       <section>
         <p>banner</p>
       </section>
     </aside>
 
   </main>
+  <footer>
+    footerContents
+  </footer>
 
 </body>
 </html>

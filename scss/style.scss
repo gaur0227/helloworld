@@ -1,5 +1,8 @@
 $color: #fff;
 $red: #c42;
+$orange: #bd5019;
+$cobalt-blue: #1563c5;
+$grayish-blue:#354267;
 $white: #fefefe;
 $gray: #ccc;
 $light-gray: #e0e0e0;
@@ -8,19 +11,47 @@ li{list-style: none;}
 
 body{
   width: 100%;
-  padding-top: 20px;
   text-align: center;
   background: $light-gray;
-}
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 
+}
+header{
+  nav{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: $white;
+    .logo{
+      display: inline-block;
+      padding: 2px 10px 5px;
+      font-family: din;
+      font-weight: 700;
+      font-size: x-large;
+      color: $white;
+      background: $orange;
+      border-radius: 25px;
+    }
+    span:first-child{
+      margin-right: auto;
+    }
+    span{
+      display: block;
+      padding:0 20px;
+    }
+  }
+}
 main{
   display: inline-block;
+  width: 100%!important;
   text-align: left;
   /*test*/
   section.container{
     padding: 20px;
     background: $white;
     border-radius: 10px;
+    box-shadow: 0 0 5px 0 $dark-gray;
 
     h1{font-size: 1.8rem; font-weight: 600;}
     h2{font-size: 1.5rem; font-weight: 600;}
@@ -35,14 +66,15 @@ main{
           time.data{
             display: inline-block;
             padding: 0 5px;
-            background: $red;
+            background: $grayish-blue;
             color: $white;
             font-size: 0.8rem;
             border-radius: 5px;
           }
         }
       }
-      pre{
+      pre,code{
+        display: inline-block;
         width: 100%;
         margin: 10px 0;
         padding: 10px;
@@ -59,14 +91,25 @@ main{
       padding: 20px;
       background: $white;
       border-radius: 10px;
+      box-shadow: 0 0 5px 0 $dark-gray;
     }
   }
-  @media screen and (max-width: 768px){
-    width: 100%!important;
-    section.container{}
+  @media screen and (max-width: 991px){
     aside{
       margin:30px 0;
       padding: 0!important;
     }
   }
+  @media screen and (max-width: 768px){
+    width: 100%!important;
+    section.container{width: 100%;}
+    aside{}
+  }
+}
+footer{
+  margin-top: 30px;
+  padding: 20px;
+  text-align: left;
+  background: $dark-gray;
+  color: $white;
 }
