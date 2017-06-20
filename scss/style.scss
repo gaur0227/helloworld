@@ -15,7 +15,7 @@ body{
   background: rgba(224,224,224,0.5);
   background-image: url(../img/dot.png);
   background-size: 5px;
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-family: "RooneySans-Bold",Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 
 }
 header{
@@ -42,38 +42,46 @@ header{
       display: block;
       padding:0 20px;
     }
+    span.sp{display: none;}
+  }
+  @media screen and (max-width: 768px){
+    nav{
+      text-align: center;
+      .logo{}
+      span:first-child{
+        margin: 0 auto;
+      }
+      span{padding: 0;}
+      span.pc{display: none;}
+      span.sp{
+        display: inline-block;
+        position: relative;
+        right: 15px;
+        top: 0;
+        button{background: none;color: $cobalt-blue;}
+        .modal-content{
+          padding: 20px;
+          line-height: 2.8em;
+        }
+      }
+
+    }
   }
 }
 main{
   display: inline-block;
   width: 100%!important;
   text-align: left;
-  /*test*/
+
   section.container{
     padding: 20px;
     background: $white;
     border-radius: 10px;
-<<<<<<< HEAD
-    section{
-      .main{
-        width: 330px;
-      }
-    }
-    aside{
-      display: block;
-      margin-left:20px;
-      width:250px;
-      height: 200px;
-    }
-      p {
-        color:#fff;
-        margin-bottom: 1.5em;
-=======
     box-shadow: 0 0 5px 0 $dark-gray;
 
-    h1{font-size: 1.8rem; font-weight: 600;}
-    h2{font-size: 1.5rem; font-weight: 600;}
-    h3{font-size: 1.2rem; margin: 20px 0 0 0;}
+    h1{font-size: 1.6rem; font-weight: 600;}
+    h2{font-size: 1.2rem; font-weight: 600;}
+    h3{font-size: 1.0rem; margin: 20px 0 0 0;}
     ul{
       margin: 10px 10px 50px 10px;
       line-height: 1.2em;
@@ -105,10 +113,12 @@ main{
         // white-space: -o-pre-wrap;   /* Opera 7 */
         // white-space: pre-wrap;      /* CSS3 */
         // word-wrap: break-word;      /* IE 5.5+ */
-        overflow: scroll;
->>>>>>> pre-a_1.0
+        overflow: auto;
+        white-space: normal;
       }
       code{
+        white-space: pre;
+
       }
     }
   }

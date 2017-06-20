@@ -8,7 +8,7 @@ body {
   background: rgba(224, 224, 224, 0.5);
   background-image: url(../img/dot.png);
   background-size: 5px;
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-family: "RooneySans-Bold",Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
 header nav {
@@ -35,12 +35,42 @@ header nav span {
   display: block;
   padding: 0 20px;
 }
+header nav span.sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    text-align: center;
+  }
+  header nav span:first-child {
+    margin: 0 auto;
+  }
+  header nav span {
+    padding: 0;
+  }
+  header nav span.pc {
+    display: none;
+  }
+  header nav span.sp {
+    display: inline-block;
+    position: relative;
+    right: 15px;
+    top: 0;
+  }
+  header nav span.sp button {
+    background: none;
+    color: #1563c5;
+  }
+  header nav span.sp .modal-content {
+    padding: 20px;
+    line-height: 2.8em;
+  }
+}
 
 main {
   display: inline-block;
   width: 100% !important;
   text-align: left;
-  /*test*/
 }
 main section.container {
   padding: 20px;
@@ -49,15 +79,15 @@ main section.container {
   box-shadow: 0 0 5px 0 #505050;
 }
 main section.container h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 main section.container h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 main section.container h3 {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin: 20px 0 0 0;
 }
 main section.container ul {
@@ -87,7 +117,11 @@ main section.container ul pre {
   background: #e0e0e0;
   color: #505050;
   font-size: 0.8em;
-  overflow: scroll;
+  overflow: auto;
+  white-space: normal;
+}
+main section.container ul code {
+  white-space: pre;
 }
 main aside.sidecont {
   padding-right: 0 !important;
