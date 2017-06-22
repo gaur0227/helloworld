@@ -12,6 +12,7 @@ $red: #c42;
 $orange: #bd5019;
 $cobalt-blue: #1563c5;
 $grayish-blue:#354267;
+$light-grayish-green:#8fbc8f;
 $white: #fefefe;
 $gray: #ccc;
 $light-gray: #e0e0e0;
@@ -23,7 +24,7 @@ body{
   text-align: center;
   background: rgba(224,224,224,0.5);
   background-image: url(../img/dot.png);
-  background-size: 5px;
+  background-size: 7px;
   font-family: "RooneySans-Bold",Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 
 }
@@ -45,7 +46,7 @@ header{
       border-radius: 25px;
     }
     span:first-child{
-      margin-right: auto;
+      margin-right: 60px;
     }
     span{
       display: block;
@@ -89,7 +90,13 @@ main{
     box-shadow: 0 0 5px 0 $dark-gray;
 
     h1{font-size: 1.6rem; font-weight: 600;}
-    h2{font-size: 1.2rem; font-weight: 600;}
+    h2{
+      padding: 5px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      background: $light-grayish-green;
+      color: $white;
+    }
     h3{font-size: 1.0rem; margin: 20px 0 0 0;}
     ul{
       margin: 10px 10px 50px 10px;
