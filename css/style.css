@@ -138,6 +138,7 @@ main aside.sidecont {
   padding-right: 0 !important;
 }
 main aside.sidecont section {
+  margin-bottom: 30px;
   padding: 20px;
   background: #fefefe;
   border-radius: 10px;
