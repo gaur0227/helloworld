@@ -1,16 +1,23 @@
 /* 変動する値[
-      各10進数枠、$str-Dec
-      各16進数枠、$str-Hex
-      各バーの値、$str-Bar
-      各パーセンテージの値、$str-Par
-      各カラーの窓、$str-Win
+      各バーの値、$scr-Bar
+      各10進数枠、$scr-Dec
+      各16進数枠、$scr-Hex
+      各パーセンテージの値、$scr-Par
+      各カラーの窓、$scr-Win
 ]*/
 
 //バーの値を取得
-
+setValue(color,scr);{//colorに各色のバーid, strに値
+  scr = document.getElmentbyId(color).value;
+  return;
+}
 
 //10進数
 //16進数
+setHex();{
+  scr = scr.toString(16);
+  return;
+}
 //％
 // カラー窓
 
