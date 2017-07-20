@@ -1,0 +1,18 @@
+body{text-align: center;}
+#box{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  width:auto;
+  height:200px;
+  background:rbg(255,255,255);
+  border:5px #444 solid;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+span{padding:0 5px; color:#fff;}
+span#red{background:red;}
+span#green{background:green;}
+span#blue{background:blue;}
+div#preview{margin:15px 0;}

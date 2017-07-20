@@ -1,34 +1,48 @@
-/* 変動する値[
-      各10進数枠、$str-Dec
-      各16進数枠、$str-Hex
-      各バーの値、$str-Bar
-      各パーセンテージの値、$str-Par
-      各カラーの窓、$str-Win
-]*/
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="/favicon.png">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <div>[ onInput="function();" ]は、なんて便利なんだ！！！</div>
+<div id="box">color</div>
 
-//バーの値を取得
+<!-- テキスト <--><span id="red">R</span>
+<input id="Rcolor"type="text" value="0" style="width:25px;"/>
+<input id="Rcolor16"type="text" value="0" style="width:25px;"/>
+<!-- バー -->
+<input id="Rbar" type="range" name="example1" value="0" min="0" max="255" onInput="callege();" />
+<input id="Rave"type="text" value="0" style="width:25px;"/>%
+<hr />
 
+<!-- テキスト <--><span id="green">G</span>
+<input type="text" value="0" id="Gcolor" style="width:25px;"/>
+<input type="text" value="0" id="Gcolor16" style="width:25px;"/>
+<!-- バー -->
+<input id="Gbar" type="range" name="example1" value="0" min="0" max="255" onInput="callege();" />
+<input id="Gave"type="text" value="0" style="width:25px;"/>%
+<hr />
 
-//10進数
-//16進数
-//％
-// カラー窓
+<!-- テキスト <--><span id="blue">B</span>
+<input type="text" value="0" id="Bcolor" style="width:25px;"/>
+<input type="text" value="0" id="Bcolor16" style="width:25px;"/>
+<!-- バー -->
+<input id="Bbar" type="range" name="example1" value="0" min="0" max="255" onInput="callege();" />
+<input id="Bave"type="text" value="0" style="width:25px;"/>%
+<hr />
 
+<!-- ボタン -->
+<input type="text" id="preview" value="000000" />
+<input type="button" value="Rest" onclick="reset();"/>
 
-
-// ---以下反映処理---
-function preview(){
-  aa
-  aa
-// RGB可視化
-// RGB値のプレビュー
-}
-
-
-// 値をリセット
-function reset() {
-  setValue(rBar,0);
-  setValue(gBar,0);
-  setValue(bBar,0);
-  preview();
-}
+</body>
+</html>
