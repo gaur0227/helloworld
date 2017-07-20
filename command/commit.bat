@@ -7,4 +7,5 @@ git add --all
 git commit -a -m"%num01%"
 git push --all
 
-pause
+cd ../
+echo "ˆ—‚ªI—¹‚µ‚Ü‚µ‚½B"
