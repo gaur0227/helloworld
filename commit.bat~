@@ -4,5 +4,3 @@ git fetch
 git add --all
 git commit -a -m"%num01%"
 git push --all
-gaur0227
-kenta1@31
