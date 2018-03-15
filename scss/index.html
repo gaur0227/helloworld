@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="This is my codeLog, Thankyou watch this.">
+	<meta name="keywords" content="gaur0227,fujito0227,kawase,fujitotag,contentlog,webdesigner">
+	<meta name="author" content="kentakawase">
+	<meta property="og:title" content="title">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://">
+	<meta property="og:image" content="http://.png">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="" />
+	<meta property="fb:app_id" content="#id">
+
+
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="logo">Sample Logz</span>
+      <span class="pc"><a href="../">Portfolio</a></span>
+      <span class="pc"><a href="../gallery/">Gallery</a></span>
+      <span class="pc"><a href="../blog/">Blog</a></span>
+
+
+      <span class="sp">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">=</button>
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <h1>Link List</h1>
+              <hr>
+              <div>
+              <span class=""><a href="../">Portfolio</a></span>
+              <span class=""><a href="../gallery/">Gallery</a></span>
+              <span class=""><a href="../blog/">Blog</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </span>
+
+
+    </nav>
+  </header>
+  <main class="container">
+    <section class="col-md-8 container">
+      <h1><a href="hellow.html">HelloWorld</a></h1>
+      <hr />
+      <h2>JavaScript:</h2>
+      <h3>■CodePen</h3>
+      <ul>
+        <li>
+          <article class="">
+            <a target="_blank" href="https://codepen.io/gaur0227/pen/gRPwEZ">document.getElementById();---Training</a>
+            <p><time class="data">DATA: 2017-06-12</time></p>
+            <figure><pre>
+<code>function pls(){
+  var f01 = document.getElementById('fast01').value,
+      f02 = document.getElementById('fast02').value;
+  f01 = Number(f01);
+  f02 = Number(f02);
+  var sam = f01 + f02;
+  console.log(sam);
+}
+</code>
+            </pre>
+            </figure>
+          </article>
+        </li>
+        <li>
+          <article class="">
+            <a target="_blank" href="https://codepen.io/gaur0227/pen/Rgaqbm">document.getElementById();---Trial</a>
+            <p><time class="data">DATA: 2017-06-13</time></p>
+            <pre>
+<code>function sel(x){
+  var i = document.getElementById('bar').value;
+  document.getElementById('bar').value = x;
+  if(bar.style.background === x){
+    bar.style.background = null;
+    document.getElementById('bar').value = 'selectColor';
+  }else{
+    bar.style.background = x ;
+  }
+}</code>
+            </pre>
+          </article>
+        </li>
+        <li>
+          <article class="">
+            <a target="_blank" href="#">document.getElementById();---Pre_idea</a>
+            <p><time class="data">DATA: 2017-00-00</time></p>
+            <pre>pre-test</pre>
+          </article>
+        </li>
+      </ul>
+      <hr />
+
+
+      <h2>SCSS / CSS</h2>
+      <h3>■Github</h3>
+      <ul>
+        <li>
+          <article>
+            <a target="_blank" href="https://github.com/gaur0227/helloworld">HelloWorld</a>
+            <p><time class="data">DATA: 2017-06-19</time></p>
+            <pre>
+              <code>■よく使うGitコード
+   $git add --all
+   $git commit -a -m"Message"
+   $git push --all
+   $git checkout [branch]</code></pre>
+          </article>
+        </li>
+      </ul>
+      <h3>■CodePen</h3>
+      <ul>
+        <li>
+          <article>
+            <a target="_blank" href="https://codepen.io/gaur0227/pen/aWrPLz">bg_filter</a>
+            <p><time class="data">DATA: 2017-06-05</time></p>
+            <pre>
+<code>.filter{
+  position: absolute;
+  z-index:2;
+  bottom: 0;
+  width: 100%;
+  height: 280px;
+  background: rgba(0,0,0,.75);
+}</code>
+            </pre>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a target="_blank" href="https://codepen.io/gaur0227/pen/WjYBgy">bg_blur</a>
+            <p><time class="data">DATA: 2017-06-08</time></p>
+            <pre>
+<code>.blur{
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  padding: 30px;
+  background: url(http://urx3.nu/DE3F);
+  background-size: cover;
+  overflow: hidden;
+}
+.blur:before{
+  display: inherit;
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(5px);
+   -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}</code>
+            </pre>
+          </article>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>PHP</h2>
+      <h3>■ideone</h3>
+      <ul>
+        <li>
+          <article>
+            <a href="http://ideone.com/M5WtXu">echo();-PHP_Beginner</a>
+            <p><time class="data">2017-06-22</time></p>
+            <pre>
+              <cpde>echo();</cpde>
+            </pre>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#">NoTitle</a>
+            <p><time class="data">--</time></p>
+            <pre>
+              <cpde>null</cpde>
+            </pre>
+          </article>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>Java</h2>
+      <h3>■ideone</h3>
+      <ul>
+        <li>
+          <article>
+          <a href="https://github.com/gaur0227/development/blob/v-a1.0/java/helloworld.java">int;</a>
+          <p>
+            <time class="data">2017-06-22</time>
+          </p>
+          <pre>
+            <code>int '1706'</code>
+          </pre>
+          </article>
+        </li>
+      </ul>
+      <hr />
+
+      <h2>bat</h2>
+      <h3>■Github</h3>
+      <ul>
+        <li>
+          <article>
+          <a href="https://github.com/gaur0227/development/blob/v-a1.0/bat/rename.bat">rename</a>
+          <p>
+            <time class="data">2017-06-22</time>
+          </p>
+          <pre>
+            <code>ren</code>
+          </pre>
+          </article>
+        </li>
+      </ul>
+      <hr />
+    </section>
+
+    <aside class="col-md-4 sidecont container">
+      <section>
+        <p>
+          習得中のコード一覧<br><br>
+          ・Javascript<br>
+          ・PHP<br>
+          ・MySQL<br>
+          ・Java<br>
+          ・bat<br>
+        </p>
+      </section>
+      <section>
+        <p>
+          習得中のコード一覧<br><br>
+          ・Javascript<br>
+          ・PHP<br>
+          ・MySQL<br>
+          ・Java<br>
+          ・bat<br>
+        </p>
+      </section>
+    </aside>
+
+  </main>
+  <footer>
+    footerContents,fonts--Aspira
+  </footer>
+
+</body>
+</html>
